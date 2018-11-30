@@ -13,6 +13,24 @@ module.exports = {
       g: colorRGB[2]
     };
   },
+    getOldColor: function () {
+    var index = Math.floor(Math.random() * this.colors.length);
+    var color = this.colors[index];
+    return {
+        r: color.r,
+        b: color.b,
+        g: color.g
+    };
+},
+      getChristmasColor: function () {
+    var index = Math.floor(Math.random() * this.colors.length);
+    var color = this.colors[index];
+    return {
+        r: chris.r,
+        b: chris.b,
+        g: chris.g
+    };
+},
   getRandomPosition: function (borderRight, borderLeft, borderBottom, borderTop) {
     return {
       x: Math.floor(Math.random() * (borderRight - borderLeft)) + borderLeft,
